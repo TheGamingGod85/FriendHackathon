@@ -1,6 +1,6 @@
 # FriendHackathon
 
-# Helped A Friend In His Hackathon Project,
+# Helped A Friend (Akshat S.) In His Hackathon Project,
 
 ## To Run This Project First Run:
 ```pip install -r requirements.txt```
