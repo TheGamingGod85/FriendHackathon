@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the header */
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Style for the welcome message */
+        .welcome-message {
+            font-size: 18px;
+        }
+
+        /* Style for the form */
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        /* Style for the labels and select inputs */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the right column */
+        .right-column {
+            float: right;
+            width: 40%;
+            padding: 20px;
+        }
+
+        /* Style for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Style for the result section */
+        .result {
+            clear: both;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styles can be added as needed */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Park Wise</h1>
+        <p class="welcome-message">Revolutionizing Real-Time Street Parking Management</p>
+    </div>
+
+    <!-- Your existing HTML content here -->
+
+    <form method="post" action="/run_python_logic">
+        <label for="car_model">Select Car Model:</label>
+        <select id="car_model" name="car_model">
+            <option value="grandi10">Hyundai Grand i10</option>
+            <option value="marutisuzukifronx">Maruti Suzuki Fronx</option>
+            <option value="alto">Maruti Suzuki Alto</option>
+            <option value="swift">Maruti Suzuki Swift</option>
+            <option value="grandvitara">Hyundai Grand Vitara</option>
+            <option value="hondacity">Honda City</option>
+            <option value="scorpio">Mahindra Scorpio</option>
+            <option value="kiaseltos">Kia Seltos</option>
+            <option value="bmwx1">BMW X1</option>
+            <option value="bmwx7">BMW X7</option>
+        </select><br><br>
+
+        <label for="parking_location">Select Parking Location:</label>
+        <select id="parking_location" name="parking_location">
+            <option value="1">Street Parking 1</option>
+            <option value="2">Street Parking 2</option>
+            <option value="3">Street Parking 3</option>
+            <option value="4">Parking Lot A</option>
+            <option value="5">Parking Lot B</option>
+        </select><br><br>
+
+        <input type="submit" value="Park My Car">
+    </form>
+
+    <div class="center">
+        <h2>Parking Information</h2>
+        <table border="1">
+            <tr>
+                <th>Parking Location</th>
+                <th>Price</th>
+                <th>Vacant Spaces</th>
+            </tr>
+            <tr>
+                <td>Street parking 1</td>
+                <td>38</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Street parking 2</td>
+                <td>35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Street parking 3</td>
+                <td>40</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Parking lot A</td>
+                <td>40</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Parking lot B</td>
+                <td>50</td>
+                <td>44</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="result">
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    </div>
+
+    <footer>
+        <p>HTML & Flask development assistance by <a href="https://thegaminggod85.github.io/">TheGamingGod85</a></p>
+    </footer>
+    
+    
+    <!-- More HTML content -->
+
+</body>
+
+</html>
